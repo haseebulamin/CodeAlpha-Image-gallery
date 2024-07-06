@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2" >
+    <input type="radio" name="photos" id="check3" >
+    <input type="radio" name="photos" id="check4" >
+
+    <div class="container">
+        <h1>Our Photos Gallery</h1>
+        <div class="toggle">
+            <label for="check1" id="All" onclick="All1()">All Photos</label>
+            <label for="check2" id="family" onclick="family1()">Family</label>
+            <label for="check3" id="child" onclick="child1()">Child</label>
+            <label for="check4" id="nature" onclick="nature1()">Nature</label>
+        </div>
+
+        <div class="gallery">
+            <div class="pic family">
+                <img src="/Images/F1.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C1.jpg" alt="">
+            </div>
+            <div class="pic nature">
+                <img src="/Images/N1.jpg" alt="">
+            </div>
+
+            <div class="pic family">
+                <img src="/Images/F2.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C2.jpg" alt="">
+            </div>
+            <div class="pic nature">
+                <img src="/Images/N2.jpg" alt="">
+            </div>
+            
+            <div class="pic family">
+                <img src="/Images/F3.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C3.jpg" alt="">
+            </div>
+            <div class="pic nature">
+                <img src="/Images/N3.jpg" alt="">
+            </div>
+
+            <div class="pic family">
+                <img src="/Images/F4.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C4.jpg" alt="">
+            </div>
+            <div class="pic nature">
+                <img src="/Images/N4.jpg" alt="">
+            </div>
+
+            <div class="pic family">
+                <img src="/Images/F5.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C5.jpg" alt="">
+            </div>
+
+            <div class="pic family">
+                <img src="/Images/F6.jpg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="/Images/C6.jpg" alt="">
+            </div>
+
+            <div class="pic family">
+                <img src="/Images/F7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let all = document.getElementById("All")
+        let family = document.getElementById("family")
+        let child = document.getElementById("child")
+        let nature = document.getElementById("nature")
+        
+        all.style.backgroundColor="orange";
+
+        const family1 = ()=>{
+            family.style.backgroundColor = "orange";
+            all.style.backgroundColor = "#8080801f";
+            child.style.backgroundColor = "#8080801f";
+            nature.style.backgroundColor = "#8080801f";
+        }
+        const child1 = ()=>{
+            family.style.backgroundColor = "#8080801f";
+            all.style.backgroundColor = "#8080801f";
+            child.style.backgroundColor = "orange";
+            nature.style.backgroundColor = "#8080801f";
+        }
+        const nature1 = ()=>{
+            family.style.backgroundColor = "#8080801f";
+            all.style.backgroundColor = "#8080801f";
+            child.style.backgroundColor = "#8080801f";
+            nature.style.backgroundColor = "orange";
+        }
+        const All1 = ()=>{
+            family.style.backgroundColor = "#8080801f";
+            all.style.backgroundColor = "orange";
+            child.style.backgroundColor = "#8080801f";
+            nature.style.backgroundColor = "#8080801f";
+        }
+
+            </script>
+</body>
+</html>
